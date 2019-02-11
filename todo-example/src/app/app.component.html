@@ -1,0 +1,9 @@
+<div>
+    <app-todo-list [todos]="todos" (addTodo)="onAdd()" [callback]="callback"></app-todo-list>
+</div>
+<div>{{message}}</div>
+<button (click)="toggleFirst()">Toggle First Item</button>
+<button (click)="addTodo()">Add Todo to List</button>
+{{ todos[0].completed}}
+
+<router-outlet></router-outlet>
